@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'my-app',
+  styleUrls: [ './app.component.scss' ],
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'my works!';
+  isLeftVisible = true;
 }

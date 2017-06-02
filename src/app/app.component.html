@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<my-slide-panel [activePane]="isLeftVisible ? 'left' : 'right'">
+  <div leftPane>LEFT</div>
+  <div rightPane>RIGHT</div>
+</my-slide-panel>
+
+<button (click)="isLeftVisible = !isLeftVisible">Toggle panes</button>

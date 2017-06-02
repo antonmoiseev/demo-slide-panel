@@ -1,0 +1,31 @@
+:host {
+  display: block;
+}
+
+button {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+my-slide-panel {
+  border: 6px solid #FF6060;
+  max-width: 500px;
+  height: 150px;
+
+  div {
+    font: 20px sans-serif;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/deep/ my-slide-panel .panes {
+  border: 6px dashed #4990E2;
+  box-sizing: border-box;
+}
+
+[leftPane]  { background-color: #FFF897; }
+[rightPane] { background-color: #6CE6CB; }
